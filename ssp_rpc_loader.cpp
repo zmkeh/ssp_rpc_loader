@@ -54,7 +54,7 @@ int main(int argc, char** argv) {
 	//memcpy(rpcPacket + 0x40, &packageName, 8);
 	//*(unsigned long long*)((char*)rpcPacket + 0x48) = 0xd8;  // Offset to unicode ssp name
 	mbstowcs((wchar_t*)(rpcPacket + 0xa8), argv[1], (sizeof(rpcPacket) - 0xa8) / 2);
-	packetLen = 0xd8 + packageName.MaximumLength;
+	packetLen = 0xa8 + packageName.MaximumLength;
 
 	// Complete RPC packet fields
 	*(unsigned long*)rpcPacket = 0xcc; // ??
