@@ -27,7 +27,7 @@ It still failed with error code `0x6e4 - The requested operation is not supporte
 ## win64 offset
 ![Alt text](image.png)
 ```text
-+0	114
++0	ec
 +2	size
 +0	??
 +8	pid
@@ -40,8 +40,8 @@ It still failed with error code `0x6e4 - The requested operation is not supporte
 ## win32 offset
 ![Alt text](image-1.png)
 ```text
-+0 cc
-+2 size
++0	cc
++2	size
 +8	pid
 +C	tid
 +18	function id
